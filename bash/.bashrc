@@ -61,7 +61,7 @@ if [ -n "$force_color_prompt" ]; then
 fi
 
 if [ "$color_prompt" = yes ]; then
-    PS1="\[\033[32m\]jhodel\[\e[00m\]: \[\033[33m\]\$(basename \w)\[\033[m\] \[\033[36m\]git\[\e[00m\]@\[\033[36m\]\$(parse_git_branch)\[\e[00m\] > "
+    PS1="\[\033[32m\]\u\[\e[00m\]: \[\033[33m\]\$(basename \w)\[\033[m\] \[\033[36m\]git\[\e[00m\]@\[\033[36m\]\$(parse_git_branch)\[\e[00m\] > "
 else
     PS1="\u:\$(basename \w) \$ "
 fi
